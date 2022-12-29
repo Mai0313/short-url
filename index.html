@@ -162,7 +162,7 @@ color: #3F76FF;
         width: 95%;
       }
     }
-    /* @media (prefers-color-scheme: dark) { 
+    @media (prefers-color-scheme: dark) { 
       body {
         color: #d9d9d9; 
         background: #1b1b1b;
@@ -170,7 +170,7 @@ color: #3F76FF;
       .card {
         background-color: #252d38;
       }
-    }  */
+    } 
   </style>
 </head>
 <body>
@@ -181,15 +181,15 @@ color: #3F76FF;
     
     <div class="card-body">
         
-      <h5 class="bigtitle">Shorten your URLs !</h5>
+      <h5 class="bigtitle">縮短網址！</h5>
       
-      <h5 class="card-title">Please enter the long URL to be shortened :</h5>
+      <h5 class="card-title">請輸入網址 :</h5>
       <div class="formm">
-        <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
-        <button class="btn-cus" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
+        <input type="text" class="form-control" placeholder="https://example.com" id="text">
+        <button class="btn-cus" type="button" onclick='shorturl()' id="searchbtn">送出</button>
       </div>    
       <div class="card-text">
-        Powered by <a href="https://github.com/Mai0313/short-url" target="_self">xyTom</a>
+        Powered by <a href="https://github.com/Mai0313/short-url" target="_self">Mai</a>
       </div>
       <p id="notice"></p>             
     </div>
@@ -198,12 +198,12 @@ color: #3F76FF;
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Result</h5>
+          <h5 class="modal-title" id="exampleModalLabel">完成</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="result">No Result</div>
+        <div class="modal-body" id="result">請檢查網址</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
