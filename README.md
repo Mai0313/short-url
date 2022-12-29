@@ -1,2 +1,4 @@
 # Url-Shorten-Worker
-A URL Shortener created using Cloudflare worker
+use Cloudflare Workers to shorten url
+
+[x] will change theme
